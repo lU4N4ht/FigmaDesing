@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+
+.espaco1{
+    background-color: #FDCE42;
+}
+
+
+.espaco2{
+    background-color: #EA0000;
+}
+header{
+    display: grid;
+    grid-template-columns: 84px 1fr 2fr 84px;
+    gap: 3px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+#circuloheader{
+    background-color: #EA0000;
+    border-radius: 50%;
+    width: 287px;
+    height: 287px;
+    transform: translateX(-40%) translateY(-40%);
+}
+#circulopontilhado{
+    background-color: transparent;
+    border-style: dotted;
+    border-color: #ffffff;
+    border-width: 5px;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    transform: translateX(-68%) translateY(-35%);
+}
+.logomcdonalds{
+    z-index: 10;
+    width: 63px;
+    height: 63px;
+    transform: translateX(-295%) translateY(-65%);
+}
+.navbar{
+    color: #322F26;
+    font-weight: 540;
+    display: flex;
+    gap: 100px;
+    transform: translateX(-510%) translateY(-400%);
+}
+ul.navbar > a{
+    color: #322F26;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+ul.navbar > a:hover{
+    transition: 0.4s all ease;
+    color: #322F26;
+}
+ul.navbar > a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    background-color: #322F26;
+}
+ul.navbar > a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.logolugar{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    transform: translateY(100%) translateX(750%);
+}
+h1{
+    font-size: 15vh;
+    color: #ffffff;
+    font-weight: bold;
+}
+h2{
+    font-size: 5vh;
+    color: #EA0000;
+    font-weight: 900;
+}
+.logolupa{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    transform: translateX(550%) translateY(10%);
+}
+
